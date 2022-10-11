@@ -1,0 +1,278 @@
+@font-face {
+    src: url(fonts/Agrandir-GrandHeavy.ttf);
+    font-family:'agrandir';
+}
+    @font-face {
+        src: url(fonts/Kollektif.ttf);
+        font-family:'kollektif';
+    }
+    @font-face {
+        font-family:'swiss';
+        src: url(fonts/Swiss\ 911\ Compressed\ Regular.ttf);
+    }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'swiss';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+    
+
+body {
+    background: #b4aa96;
+    color:#121213;
+ 
+    
+}
+#header{
+    width: 100%;
+    height: 95vh;
+    background-color: #121213;
+    background-size: cover ;
+    background-position: center;
+  
+
+}
+.container{
+    padding: 10px 10%;
+
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #b4aa96;
+    text-decoration:none;
+    font-size: 18px;
+    font-family:'agrandir';
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #586253;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 33%;
+    font-size: 30px;
+    color: #b4aa96;
+
+}
+.header-text p{
+    font-family: "agrandir";
+}
+.header-text p span{
+    font-family: "agrandir";
+    color: #586253;
+}
+.header-text h1{
+    font-size: 250px;
+    margin-top: 30px;
+}
+.header-text h1 span{
+    color: #586253;
+}
+
+/* --------------about----------- */
+#about{
+    padding: 80px 0;
+    color: #121213;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.about-col-1 {
+    flex-basis:  20%;
+    writing-mode:vertical-rl;
+    transform: rotate(180deg);
+    
+}
+.about-col-2{
+    flex-basis: 80%;
+   
+}
+.about-col-2 img{
+    width: 100%;
+    border-radius: 50%;
+  
+}
+.about-col-2 p1 {
+    font-size: 20px;
+    font-family: "swiss";
+}
+.about-col-2 h2{
+    font-family: "agrandir";
+    font-size: 20px;
+}
+#dream {
+    margin-top: 100px;
+  }
+  
+  .review1 {
+    border: 1px solid #586253;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .rowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.sub-title{
+    font-size: 200px;
+    color: #586253;
+}
+.below1{
+    font-size: 20px;
+   
+}
+/* --------------portfolio----------- */
+#portfolio{
+    padding: 100px 0;
+    margin: 0;
+}
+.review1 {
+    border: 1px solid #586253;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .rowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.sub-title{
+    font-size: 200px;
+    color: #586253;
+}
+
+   .below1{
+    font-size: 20px;
+}
+
+/* --------------contact----------- */
+.header2{
+    font-size: 150px;
+    color: #121213;
+    margin: left 15px;
+    margin-right: 0;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #121213;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 25px;
+}
+.contact-left{
+    flex-basis: 55%;
+}
+.contact-right{
+    flex-basis: 40%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #586253;
+    margin-left: 20px;
+    font-size: 25px;
+
+}
+.social-icons{ 
+    margin-top: 50px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 20px;
+    color: #121213;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #586253;
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: #586253;
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 1px solid #121213;
+    outline: none;
+    background: #b4aa96;
+    padding: 15px;
+    margin: 15px 0;
+    color: #121213;
+    font-size: 18px;
+
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* --------------contact2----------- */
+#contact2{
+    width: 100%;
+    height: 50vh;
+    background-color: #121213;
+    background-size: cover ;
+    background-position: center;
+}
+
+
+/* --------------css for small screens----------- */
+@media only screen and (max-width:600px){
+    #header{
+        background-color: #121213;
+    }
+}
